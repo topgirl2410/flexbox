@@ -69,9 +69,41 @@ h1, h2 {
     border: 1rem solid #bb2b03;
 }
 
-.contenedor > div {
+.contenedor>div {
     background-color: var(--blanco);
     padding: 5rem;
 }
 
 /** 1 **/
+
+.d-flex {
+    display: flex;
+    /* display: flex, se posiciona de izq a der */
+}
+
+
+/** 2 **/
+
+.d-flex-2 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/** 3 **/
+
+.d-flex-3 {
+    display: flex;
+    justify-content: row;
+}
+
+/** 4 **/
+.d-flex-4 {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+
+    justify-content: space-between;
+}
+
+
+/** 5 **/
