@@ -69,10 +69,10 @@ h1, h2 {
     border: 1rem solid #bb2b03;
 }
 
-.box:nth-child(2) {
+/*.box:nth-child(2) {
     font-size: 1rem;
     margin-top: 5rem;
-}
+}*/
 
 .contenedor>div {
     background-color: var(--blanco);
@@ -85,7 +85,6 @@ h1, h2 {
     display: flex;
     /* display: flex, se posiciona de izq a der */
 }
-
 
 /** 2 **/
 
@@ -110,15 +109,87 @@ h1, h2 {
     justify-content: space-between;
 }
 
-
 /** 5 **/
 
 .d-flex-5 {
     display: flex;
     height: 700px;
 
-    align-items: flex-start; /* (arriba) */
+    align-items: flex-start;
+    /* (arriba) */
 
     /* align-items: flex-end; (en medio)  */
     /* align-items: center; (centro) */
 }
+
+/** 6 **/
+
+.d-flex-6 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+
+    align-items: flex-start;
+}
+
+
+/** 7 **/
+
+/*.d-flex-7 {
+    display: flex;
+    height: 800px;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.d-flex-7 {
+    display: flex;
+    height: 800px;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+/** 8 **/
+
+.d-flex-8 {
+    display: flex;
+
+}
+
+.d-flex-8 .box {
+    flex-basis: 33.3%;
+    flex-basis: 200px;
+}
+
+
+/** 9 - Calc (el mismo resultado con dos procesos diferentes) **/
+
+.d-flex-9 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex-9 .box {
+    flex-basis: calc(33.3% - 1rem);
+    
+}
+
+
+/** 9 - Gap ((nuevo estilo)el mismo resultado con dos procesos diferentes) **/
+
+/*.d-flex-9 {
+    display: flex;
+    gap: 2rem; 
+}*/
+
+/*.d-flex-9 .box {
+    flex-basis: 33.3%;
+    
+}*/
+
