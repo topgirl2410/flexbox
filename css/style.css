@@ -230,3 +230,34 @@ h1, h2 {
     flex-grow: 1;
     /** Factor de crecimiento **/
 }
+
+/** 12 - Shrink **/
+
+.d-flex-12 {
+    display: flex;
+}
+
+.d-flex-12 .box {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+
+.d-flex-12 .box:nth-child(3){
+    flex-shrink: 2;
+}
+
+/** 13 - Shortand **/
+
+.d-flex-13 {
+    display: flex;
+}
+
+.d-flex-13 .box {
+    flex-basis: 33.3%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+
+    flex: 1 0 33.3%;
+}
